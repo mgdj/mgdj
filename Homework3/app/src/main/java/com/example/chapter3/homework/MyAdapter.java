@@ -98,20 +98,15 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
         public MyViewHolder(View v) {
             super(v);
             contentView = v;
-            tvIndex = v.findViewById(R.id.tv_index);
+            tvIndex = v.findViewById(R.id.tv_name);
             tvTitle = v.findViewById(R.id.tv_title);
             tvHot = v.findViewById(R.id.tv_hot);
         }
 
         public void onBind(int position, TestData data) {
-            tvIndex.setText(new StringBuilder().append(position+1).append(".  ").toString());
+            tvIndex.setText(data.name);
             tvTitle.setText(data.title);
             tvHot.setText(data.hot);
-            if (position < 3) {
-                tvIndex.setTextColor(Color.parseColor("#FFD700"));
-            } else {
-                tvIndex.setTextColor(Color.parseColor("#000000"));
-            }
         }
 
         public void setOnClickListener(View.OnClickListener listener) {

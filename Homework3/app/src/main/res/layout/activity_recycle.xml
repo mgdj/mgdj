@@ -7,7 +7,7 @@
     android:paddingRight="16dp">
 
     <TextView
-        android:id="@+id/tv_index"
+        android:id="@+id/tv_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="@android:color/black"
@@ -24,7 +24,7 @@
         android:textColor="@android:color/black"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toRightOf="@+id/tv_index"
+        app:layout_constraintLeft_toRightOf="@+id/tv_name"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
